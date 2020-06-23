@@ -188,9 +188,6 @@ __Note:__ there are ```xms``` and ```xmx``` flags that [control the minimum/maxi
 ### Postman Collection
 > TODO: create this and document it
 
-## Authors
-- Collin Brown - collin.brown@hrsdc-rhdcc.gc.ca
-
 ## Resources
 1. [SQLalchemy guide ch 1](https://www.oreilly.com/library/view/essential-sqlalchemy-2nd/9781491916544/ch01.html)
 2. [sqlalchemy schema](https://overiq.com/sqlalchemy-101/defining-schema-in-sqlalchemy-orm/)
