@@ -1,3 +1,5 @@
+See [parent repository](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart) for more information on the dynamic-org-chart project
+
 # Contributing
 
 ([Français](#comment-contribuer))
