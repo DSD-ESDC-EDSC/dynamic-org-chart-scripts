@@ -1,3 +1,4 @@
+See [parent repository](https://github.com/DSD-ESDC-EDSC/dynamic-org-chart) for more information on the dynamic-org-chart project
 
 # Attributions
 Attribution for open source software and code artifacts used in this project, along with their licenses and copyrights, are provided below. Please refer to the linked original licenses for further information about.
