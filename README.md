@@ -10,6 +10,31 @@ Some preprocessing scripts to prepare data for the Dynamic Org Chat project
 > 2. Create separate indices in elastic search for french/english fields (will likely want to search them differently).
 > 3. Check how the organization name column is being compared with the organization path column. Some typos/casing/spacing errors cause a failure to identify a search path.
 
+## Start up instructions
+1. Pull the elasticsearch docker image and run elasticsearch as a docker container.
+```
+docker pull docker.elastic.co/elasticsearch/elasticsearch:6.5.1
+```
+```
+docker run -p 9200:9200 -p 9300:9300 -e "http.cors.enabled=true" -e "http.cors.allow-origin=*" -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:6.5.1
+```
+
+2. Clone the ```dynamic-org-chart-scripts``` repository to a folder on your computer.
+```
+git clone https://github.com/DSD-ESDC-EDSC/dynamic-org-chart-scripts
+```
+3. In a new terminal, create and activate the virtual environment in the root of the ```dynamic-org-chart-scripts``` folder.
+```
+conda env create -f environment.yml
+```
+```
+conda activate ./venv
+```
+4. Start the main script in the ```process-geds-data``` repository by running the following command from within the virtual environment in the project root:
+```
+python start.py
+```
+
 ## Data
 The data produced by the scripts in this repository can be broken into two types: flat and hierarchical. Flat data are written into the SQL tables described below.
 
